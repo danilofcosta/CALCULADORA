@@ -89,7 +89,9 @@ document.addEventListener("DOMContentLoaded", function () {
     eel.opa()(res => { titulo.textContent = res; });
 
     eel.fundo()(res => {
-        document.querySelector("#fundo img").src = res;
+        if( res === 'NOT IMG') {}
+        else {
+        document.querySelector("#fundo img").src = res;}
     });
 });
 

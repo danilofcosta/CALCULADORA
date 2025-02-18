@@ -1,7 +1,5 @@
 import eel,os,json,random
 
-import eel.electron
-
 eel.init("web")
 
 @eel.expose
@@ -21,10 +19,14 @@ def fundo():
     with open(  "lista.json", "r", encoding="utf-8") as f:
         try:
             lista = json.load(f)
+            return random.choice(lista)
         except json.JSONDecodeError:
             lista = []
+    if len(lista) == 0:
+        return 'NOT IMG'
+
     
-    return random.choice(lista)
+    
 
 # Abre a interface web
 eel.start(
