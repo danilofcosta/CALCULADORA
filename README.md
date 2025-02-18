@@ -1,6 +1,6 @@
 # Calculadora com Eel
 
-<div style="text-align: center;">
+<div>
     <img src="web\image.png" alt="calc" style="width: 100px; height: auto;" />
 </div>
 
