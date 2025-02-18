@@ -1,4 +1,6 @@
-import eel,os,requests,json,random
+import eel,os,json,random
+
+import eel.electron
 
 eel.init("web")
 
@@ -27,7 +29,7 @@ def fundo():
 # Abre a interface web
 eel.start(
     "index.html",
-    mode="chrome",
-    size=(350, 590),  
+    mode="chrome",    size=(400, 590),  
     cmdline_args=["--window-size=350,500", "--disable-resize"]
 )
+
